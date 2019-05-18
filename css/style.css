@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: None;
+  font-weight: 300;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0000cd;
+}
+
+/* utility classes (used for multiple sections) */
+.text-main {
+  color: #0000cd;
+  font-weight: bold;
+}
+
+.m-heading {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  background: #d9d9d9d9;
+  color: #333;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 1;
+}
+
+#navbar h1 {
+  padding: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 0.5rem;
+  margin: 0 0.4rem;
+  color: #333;
+}
+
+#navbar ul li a:hover {
+  background: #cccccc;
+  color: #0000cd;
+  border-radius: 5px;
+}
+#navbar ul li a.current {
+  background: #cccccc;
+  color: #0000cd;
+  border-radius: 5px;
+}
+
+/* Header */
+#showcase {
+  background: url('/img/track.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+#showcase .showcase-content .quote {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.4rem;
+  font-weight: 50;
+  margin-bottom: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section: services */
+#services {
+  padding: 0.5rem 0;
+  background: #d9d9d9d9;
+}
+
+#services .items {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.item i {
+  margin-bottom: 1.7rem;
+  padding: 1rem;
+  color: #0000cd;
+}
+
+/* Section: Our Goal */
+
+#goal {
+  display: flex;
+}
+
+#goal .goal-img {
+  background: url('/img/shop.jpg') no-repeat center center/cover;
+  height: 60vh;
+  width: 100vh;
+}
+
+#goal .goal-text {
+  background: #333;
+  color: #fff;
+  width: 120vh;
+}
+
+#goal .goal-text h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+#goal .goal-text ul {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+#goal .goal-text li {
+  padding: 0.5rem;
+}
+
+#goal .goal-text-2 h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#goal .goal-text-2 p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Section: Contact us page */
+#contact .container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+#contact {
+  padding: 1.5rem;
+}
+
+#contact .contact-form h2 {
+  font-size: 2.5rem;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  width: 100%;
+}
+
+#contact .form-group textarea {
+  height: 170px;
+}
+
+#contact .form-group label {
+  display: block;
+  padding: 1rem 0;
+}
+
+/* Section: About us */
+.about-container {
+  background: #a6a6a6;
+  color: #fff;
+  padding: 1rem;
+  height: 50vh;
+  position: relative;
+}
+
+.about-container h1 {
+  padding-left: 14rem;
+  padding-top: 1.5rem;
+  font-size: 40px;
+}
+
+.about-container p {
+  width: 50%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.about-container .img1 {
+  display: block;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 850px;
+  bottom: 1px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/* Section: What the obsessed have to say */
+#obsessed-container {
+  background: url('/img/customerreview.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+
+#ob-grid {
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 100% 25% 25%;
+  grid-template-areas:
+    'ob-heading ob-heading ob-heading'
+    'testimonial-1 testimonial-1 testimonial-1'
+    'testimoinal-2 testimonial-2 testimonial-2';
+  color: #fff;
+}
+
+.ob-heading {
+  grid-area: ob-heading;
+  grid-column-start: 2;
+}
+
+.testimonial-1 {
+  grid-area: testimonial-1;
+  
+}
+
+.testimonial-2 {
+  grid-area: testimonial-2;
+}
+
+/* Footer */
+
+#main-footer {
+  display: flex;
+  justify-content: center;
+  background: #d9d9d9d9;
+}
+
+#main-footer p {
+  text-align: center;
+  padding: 0.5rem;
+}
