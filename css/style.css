@@ -218,36 +218,6 @@ p {
 }
 
 /* Section: About us */
-.about-container {
-  background: #a6a6a6;
-  color: #fff;
-  padding: 1rem;
-  height: 50vh;
-  position: relative;
-}
-
-.about-container h1 {
-  padding-left: 14rem;
-  padding-top: 1.5rem;
-  font-size: 40px;
-}
-
-.about-container p {
-  width: 50%;
-  padding-top: 2rem;
-  padding-left: 1rem;
-}
-
-.about-container .img1 {
-  display: block;
-  height: 100%;
-  width: auto;
-  position: absolute;
-  left: 850px;
-  bottom: 1px;
-  padding: 1rem;
-  border-radius: 50%;
-}
 
 /* Section: What the obsessed have to say */
 
