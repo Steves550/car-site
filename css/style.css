@@ -218,6 +218,25 @@ p {
 }
 
 /* Section: About us */
+.about-us {
+  display: flex;
+  padding: 1rem;
+}
+
+.about-us .about-heading {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.about-us p {
+  flex: 4;
+}
+
+.about-container .testimonials {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+}
 
 /* Section: What the obsessed have to say */
 
