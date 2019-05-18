@@ -255,31 +255,6 @@ p {
   height: 600px;
 }
 
-#ob-grid {
-  display: grid;
-  grid-template-columns: 25% auto 25%;
-  grid-template-rows: 100% 25% 25%;
-  grid-template-areas:
-    'ob-heading ob-heading ob-heading'
-    'testimonial-1 testimonial-1 testimonial-1'
-    'testimoinal-2 testimonial-2 testimonial-2';
-  color: #fff;
-}
-
-.ob-heading {
-  grid-area: ob-heading;
-  grid-column-start: 2;
-}
-
-.testimonial-1 {
-  grid-area: testimonial-1;
-  
-}
-
-.testimonial-2 {
-  grid-area: testimonial-2;
-}
-
 /* Footer */
 
 #main-footer {
